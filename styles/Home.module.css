@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'Noto Serif';
+  src: local('Noto Serif'), url(/fonts/NotoSerif/NotoSerif-BoldItalic.ttf) format('ttf');
+}
+
+.body{
+  overflow: hidden;
+background-color: #fafafa;
+}
+
+.nav{
+  padding-top: 36px;
+
+}
+
+.list_social{
+  padding-inline-start: 0;
+  margin-block-start: 0;
+}
+.item_social{
+  margin-top: 12px;
+  margin-bottom: 36px;
+  list-style: none;
+  display: inline-block;
+  font-size: 2em;
+  padding-right: 16px;
+
+  vertical-align: middle;
+  
+}
+.social_icon{
+  color: darkgrey;
+}
+
+.section_title{
+  text-align: left;
+}
+.section_subtitle{
+  margin-bottom: 32px;
+}
+.section{
+  margin-bottom: 48px;
+}
+
+.projects_item{
+  margin-bottom:32px;
+  position: relative;
+}
+.project_subtitle::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #cfd8dc 70%);
+}
+.project_subtitle{
+  text-overflow: ellipsis;
+  height: 5.6em;
+  position: relative;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.project_img{
+  object-fit: cover;
+  height:60vw;
+  width: 100%;
+  
+
+}
+
+.tag{
+  margin-right: 6px;
+}
+
+
+.hero_profilepic{
+  margin-top: 56px;
+  height:70vw;
+  object-fit: cover;
+  width:100%;
+  margin-bottom: 76px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+
+@media (min-width: 996px) { 
+  .project_img{
+    height:20vw;
+  }
+  .hero_profilepic{
+    height:25vw;
+  }
+ }
+
+
+.hero_section{
+  padding-top: 30px;
+  z-index: 1000;
+}
+
+.hero_row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.hero_gallery{
+  position: absolute;
+  z-index: -1000;
+
+}
+
+ .hero_title{
+   margin-top: 76px;
+ }
+ .hero_subtitle{
+  margin-top: 40px;
+  font-weight: lighter;
+ }
+
+.portfolio_nav{
+  width: 100%;
+  padding-top: 36px;
+  padding-bottom:36px;
+  font-weight: lighter;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  padding: 32px;
+  overflow:hidden;
+  background-color: lightgrey;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.projects_item:hover .overlay {
+  opacity: 1;
+  overflow: hidden;
+}

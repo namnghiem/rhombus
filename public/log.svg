@@ -1,0 +1,17 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(31.240936279296875,0,0,1,-22948.618004322052,0) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="514.45313" x="745.5" stroke-width="0" fill="#000000"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Oswald, sans-serif" font-size="200" id="svg_3" y="287.45313" x="128.5" fill-opacity="null" stroke-width="99" fill="#000000">PRT</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Oswald, sans-serif" font-size="200" id="svg_5" y="488.45313" x="298.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">F</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Oswald, sans-serif" font-size="200" id="svg_6" y="487.45313" x="440.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">LO</text>
+ </g>
+</svg>

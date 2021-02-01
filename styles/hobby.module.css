@@ -1,0 +1,51 @@
+.hobbies_item{
+    background-color: #cfd8dc;
+    padding: 24px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.hobby_icon{
+    vertical-align: middle !important;
+}
+
+.hobby_title{
+    vertical-align: middle;
+    font-size: larger;
+    margin-left: 18px;
+}
+
+.hobby_subtitle{
+    text-overflow: ellipsis;
+    height: 1.4em;
+    position: relative;
+    overflow: hidden;
+
+}
+  
+.hobby_subtitle::after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 1.2em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #cfd8dc 70%);
+}
+
+@media (min-width: 996px) { 
+
+    .hobby_title{
+        height: 3.5em;
+
+    }
+    .hobby_subtitle{
+        height: 1.4em;
+    }
+}
+
+.hobby_modal{
+    background-color: white;
+    color:white;
+}

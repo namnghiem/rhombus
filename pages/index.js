@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import styles from '../styles/Home.module.css'
 import { Navbar, NavDropdown, Form, FormControl, Nav, Row, Col, Badge, Button, Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
     return(
         <div className={styles.hero_gallery_parent}>
@@ -15,16 +15,16 @@ export default function Home() {
         </div>      
         <Container>
         <Navbar expand="lg" variant="light">
-          <Navbar.Brand href="#home">Nam Nghiem on <b>Portflight</b></Navbar.Brand>
+          <Navbar.Brand href="#home"><b><u>Portflight</u></b></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse id="basic-navbar-nav">
 
             <Nav className="mr-auto">
 
-              <Nav.Link href="#home">Projects</Nav.Link>
-              <Nav.Link href="#features">Awards</Nav.Link>
-              <Nav.Link href="#pricing">Experience</Nav.Link>
+              <Nav.Link href="#home">Get Started</Nav.Link>
+              <Nav.Link href="#features">About</Nav.Link>
+              <Nav.Link href="#pricing">Professionals</Nav.Link>
             </Nav>
             
             <Nav.Link href="#home">Your Portfolio</Nav.Link>
@@ -34,19 +34,13 @@ export default function Home() {
         </Navbar>
          
         <Row className={styles.hero_section}>
-          <Col lg="8">
-            <h1 className={styles.hero_title}> Title </h1>
-            <h2 className={styles.hero_subtitle}> props.data.subtitle </h2>
-            <ul className={styles.list_social}>
-                  <li className={styles.item_social} key="message">
-                    <Button variant="dark" className={styles.hero_button}>Message Now</Button>{' '}
-                  </li>
-                  
-                  
-                </ul>
+          <Col lg="6">
+            <h1 className={styles.hero_title}> Calling all <b><u>artists, coders and makers.</u></b> </h1>
+            <h3 className={styles.hero_subtitle}> You are more than your resume.</h3>
+            <h5>Whether you make movies, write code or design buildings, get discovered with a smart online portfolio.</h5>
           </Col>
-          <Col lg="4">
-            <img src="../picture.jpg" className={styles.hero_profilepic}></img>
+          <Col lg="6">
+            <img className={styles.landing_hero_picture} src="../undraw_innovative_b409.svg"></img>
           
           </Col>
 

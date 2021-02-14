@@ -1,6 +1,6 @@
 import React from 'react';
-import style from '../../styles/experience.module.css'
-import section_styles from '../../styles/Home.module.css'
+import style from '../styles/experience.module.css'
+import section_styles from '../styles/Home.module.css'
 
 import { Row, Col, Container } from 'react-bootstrap';
 import {Award} from './Award.js';

@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook} from '@fortawesome/free-brands-svg-icons'
 import { faGlobe, faCaretSquareDown} from '@fortawesome/free-solid-svg-icons'
 import { Navbar, NavDropdown, Form, FormControl, Nav, Row, Col, Badge, Button, Container } from 'react-bootstrap';
 import Gallery from 'react-photo-gallery';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { photos } from "./photos";
 
 const icons = {
   "facebook": faFacebook,

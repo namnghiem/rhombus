@@ -1,6 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
-import { photos } from "./photos";
 import styles from '../styles/Home.module.css'
 import { Navbar, NavDropdown, Form, FormControl, Nav, Row, Col, Badge, Button, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';

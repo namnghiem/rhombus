@@ -1,12 +1,12 @@
 import React from 'react';
-import hobby_styles from '../../styles/hobby.module.css'
-import section_styles from '../../styles/Home.module.css'
+import award_styles from '../styles/awards.module.css'
+import section_styles from '../styles/Home.module.css'
 
 import { Row, Col, Container } from 'react-bootstrap';
-import {Hobby} from './Hobby.js';
+import {Award} from './Award.js';
 
 
-export class Hobbies extends React.Component {
+export class Awards extends React.Component {
   render(){
     return (
       <Row  className={section_styles.section}>
@@ -19,8 +19,8 @@ export class Hobbies extends React.Component {
                 </Col>
             </Row>
             <Row >
-                {this.props.data.data.map((hobby)=>
-                    <Hobby data = {hobby}></Hobby>
+                {this.props.data.data.map((award)=>
+                    <Award data = {award}></Award>
                     
                 )}
                 

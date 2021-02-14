@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Section from './section.js'
+import Section from '../../components/section.js'
 import styles from '../../styles/Home.module.css'
 import Container from 'react-bootstrap/Container'
 // The following import prevents a Font Awesome icon server-side rendering bug,
@@ -10,7 +10,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false;
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRouter } from 'next/router'
-import { api } from '../api.js'
+import { api } from '../../components/api.js'
 
 var rendersource = api;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/hobby.module.css'
+import styles from '../styles/hobby.module.css'
 import {Modal, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAward} from '@fortawesome/free-solid-svg-icons'

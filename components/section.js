@@ -1,9 +1,9 @@
 import React from 'react';
-import Hero from '../views/hero.js';
-import {Projects} from '../views/projects.js';
-import {Awards} from '../views/Awards.js';
-import {Hobbies} from '../views/Hobbies.js';
-import {Experience} from '../views/Experience.js';
+import Hero from './hero.js';
+import {Projects} from './projects.js';
+import {Awards} from './Awards.js';
+import {Hobbies} from './Hobbies.js';
+import {Experience} from './Experience.js';
 
 
 

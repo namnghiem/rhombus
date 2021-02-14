@@ -1,50 +1,61 @@
-import Head from 'next/head'
-import Section from './section.js'
-import styles from '../styles/Home.module.css'
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import Button from 'react-bootstrap/Button'
-import Gallery from 'react-photo-gallery';
-// The following import prevents a Font Awesome icon server-side rendering bug,
-// where the icons flash from a very large icon down to a properly sized one:
-import '@fortawesome/fontawesome-svg-core/styles.css';
-// Prevent fontawesome from adding its CSS since we did it manually above:
-import { config } from '@fortawesome/fontawesome-svg-core';
-config.autoAddCss = false;
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React from "react";
+import { render } from "react-dom";
 import { photos } from "./photos";
-import { api } from './api.js'
-
-var rendersource = api;
-
+import styles from '../styles/Home.module.css'
+import { Navbar, NavDropdown, Form, FormControl, Nav, Row, Col, Badge, Button, Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
-  console.log(rendersource.sections[0].type)
+    return(
+        <div className={styles.hero_gallery_parent}>
+        {/* <div className={styles.hero_gallery}>
+            <Gallery photos={photos}  targetRowHeight={350} margin={0}/>
+        </div> */}
 
-  return (
-    <div className={styles.body}>
-      
-      <Head>
-        <title>Rhombus</title>
-        <link rel="icon" href="/favicon.ico" />
+        <div  className={styles.nav}>
         
-      </Head>
+        </div>      
+        <Container>
+        <Navbar expand="lg" variant="light">
+          <Navbar.Brand href="#home">Nam Nghiem on <b>Portflight</b></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+          <Navbar.Collapse id="basic-navbar-nav">
+
+            <Nav className="mr-auto">
+
+              <Nav.Link href="#home">Projects</Nav.Link>
+              <Nav.Link href="#features">Awards</Nav.Link>
+              <Nav.Link href="#pricing">Experience</Nav.Link>
+            </Nav>
+            
+            <Nav.Link href="#home">Your Portfolio</Nav.Link>
+            <Button variant="dark">Log In</Button>
+
+          </Navbar.Collapse>
+        </Navbar>
          
-
-      <Container  className={styles.relative}>
-      
-        {
-        rendersource.sections.map((section)=>
-        
+        <Row className={styles.hero_section}>
+          <Col lg="8">
+            <h1 className={styles.hero_title}> Title </h1>
+            <h2 className={styles.hero_subtitle}> props.data.subtitle </h2>
+            <ul className={styles.list_social}>
+                  <li className={styles.item_social} key="message">
+                    <Button variant="dark" className={styles.hero_button}>Message Now</Button>{' '}
+                  </li>
+                  
+                  
+                </ul>
+          </Col>
+          <Col lg="4">
+            <img src="../picture.jpg" className={styles.hero_profilepic}></img>
           
-          <Section data={section}/>
-        )}
-      </Container>
-         
+          </Col>
 
-
+        </Row>
+        
+        </Container>
+        
       
     </div>
-  )
+    )
 }

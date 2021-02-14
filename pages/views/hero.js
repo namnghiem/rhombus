@@ -5,7 +5,7 @@ import { faFacebook} from '@fortawesome/free-brands-svg-icons'
 import { faGlobe, faCaretSquareDown} from '@fortawesome/free-solid-svg-icons'
 import { Navbar, NavDropdown, Form, FormControl, Nav, Row, Col, Badge, Button, Container } from 'react-bootstrap';
 import Gallery from 'react-photo-gallery';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { photos } from "./photos";
 
 const icons = {
@@ -49,12 +49,12 @@ function Hero(props){
             <h1 className={styles.hero_title}> {props.data.title} </h1>
             <h2 className={styles.hero_subtitle}> {props.data.subtitle} </h2>
             <ul className={styles.list_social}>
-                  <li className={styles.item_social}>
+                  <li className={styles.item_social} key="message">
                     <Button variant="dark" className={styles.hero_button}>Message Now</Button>{' '}
                   </li>
                   {props.data.data.map((links) =>
                   
-                    <li className={styles.item_social}>
+                    <li className={styles.item_social} key={links.data}>
                       <a href={links.data}>
                         <FontAwesomeIcon 
                           icon={icons[links.type]} 

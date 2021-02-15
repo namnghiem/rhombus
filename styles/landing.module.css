@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.hero_picture{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.hero_section{
+    padding-top: 40px;
+    z-index: 1000;
+    margin-right: 16px;
+}
+
+
+.hero_title{
+    margin-top: 40px;
+    font-family: 'Oxygen', Roboto, sans-serif;
+}
+.hero_subtitle{
+   margin-top: 40px;    
+   font-family: 'Oxygen', Roboto, sans-serif;
+
+}
+
+.nav{
+    padding:2rem 0 !important;
+}
+
+.brand{
+    font-family: 'Oxygen', Roboto, sans-serif;
+}

@@ -24,13 +24,13 @@ export class ImageProject extends React.Component {
                     </div>
                     
                 </Col>
-                <Modal show={this.state.show} onHide={handleClose} centered size = "lg">
-                <Modal.Header closeButton>
+                <Modal show={this.state.show} onHide={handleClose} centered size = "md">
+                <Modal.Header closeButton className={styles.modal_header}> 
                     <Modal.Title>{this.props.data.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <img className={styles.project_img}  src={this.props.data.data}></img>
-                    {this.props.data.subtitle}
+                    <p className={styles.modal_subtitle}>{this.props.data.subtitle}</p>
 
                 </Modal.Body>
                 </Modal>

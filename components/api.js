@@ -16,6 +16,15 @@ export const api = {
         {"title":"PocketON", "subtitle":"I directed a movie with one of the most gifted directors that I know of, and the picture was about the man making the choice about what kind of marriage to choose. The character was the real star, but the director was the real star. He shot the whole thing like I would see you at a wedding in the desert. So in that sense, when you have actors as talented as you are, especially when you're a veteran, it's easy to create the illusion of you. There was no choice", "type":"image", "data":"https://source.unsplash.com/XiDA78wAZVw/600x799"},
         {"title":"Societies", "subtitle":"I led a team of 40 engineers and scientists to investigate how the world uses and responds to electromagnetic energy. We discovered that this is an ancient, pervasive phenomenon that will not be solved overnight. It is the power of the sun, not the solar system that causes us, but the sun itself. With our help, the Earth's electromagnetic radiation shield begins to change into an energy shield that keeps the sun at bay and our Earth-based suns at bay. It's a fascinating science paper and is available on- © 2019-2020 Fabrice Bellard - Technical notes", "type":"image", "data":"https://source.unsplash.com/I1ASdgphUH4/800x599"}
       ]},
+      {"title":"Photography", subtitle:"Taking Pictures Around the World", "type": "gallery", "data": [
+        {"src":"https://source.unsplash.com/2ShvY8Lf6l0/800x599", "width":"4", "height":"3"},
+        {"src":"https://source.unsplash.com/Dm-qxdynoEc/800x799", "width":"1", "height":"1"},
+        {"src":"https://source.unsplash.com/qDkso9nvCg0/600x799", "width":"3", "height":"4"},
+        {"src":"https://source.unsplash.com/iecJiKe_RNg/600x799", "width":"3", "height":"4"},
+        {"src":"https://source.unsplash.com/epcsn8Ed8kY/600x799", "width":"4", "height":"3"},
+        {"src":"https://source.unsplash.com/NQSWvyVRIJk/800x599", "width":"3", "height":"4"},
+        {"src":"https://source.unsplash.com/zh7GEuORbUw/600x799", "width":"4", "height":"3"},
+        ] },
       {"title":"Awards",  "subtitle":"Recognition of my work.","type": "awards", "data": [
         {"title":"Google Call to Code Finalist", "subtitle":"I reached the finals of a coding competition by putting together some quick code to show my friends. We got a few responses from people that had seen the show, and some people who had never heard of it. Some of these people would come back months later to read our code, and the rest of them would say", "type":"image"},
         {"title":"Junior Mace Debating National Finalist", "subtitle":"I won a debating competition last year, and was on the panel of judges when the jury decided it was the most entertaining thing on tv. What I'll be doing is trying to win the world championships in another tournament and then try to run for a spot on The Masters list.", "type":"image"},
@@ -37,7 +46,9 @@ export const api = {
         {"title":"text1", "subtitle":"Details", "type":"image"},
         {"title":"text1", "subtitle":"Details", "type":"image"},
         {"title":"text1", "subtitle":"Details", "type":"image"}
-      ] }
+      ] },
+
+      {"title":"Video", "type":"video"}
     ]
     
   }

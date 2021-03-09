@@ -27,6 +27,7 @@ export default function Home() {
         
       </Head>
          
+      <div className={styles.gradient}></div>
 
       <Container  className={styles.relative}>
       

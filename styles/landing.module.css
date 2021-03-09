@@ -6,28 +6,78 @@
     object-fit: contain;
 }
 
+.blurred_box{
+  border-radius: 2px;
+  overflow: hidden;
+
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.blurred_box::before{
+    content: '';
+    background-color: rgba(255, 255, 255, 0.3);
+
+    height: 100%;
+    position: absolute;
+    width: 100%; 
+    border-radius: 15px;
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+   }
 
 .hero_section{
     padding-top: 40px;
     z-index: 1000;
-    margin-right: 16px;
 }
 
 
 .hero_title{
     margin-top: 40px;
     font-family: 'Oxygen', Roboto, sans-serif;
+    opacity: 0.9;
 }
 .hero_subtitle{
-   margin-top: 40px;    
+   margin-top: 20px;    
    font-family: 'Oxygen', Roboto, sans-serif;
-
+    margin-bottom: 60px;
 }
 
 .nav{
     padding:2rem 0 !important;
 }
 
-.brand{
-    font-family: 'Oxygen', Roboto, sans-serif;
-}
+    .brand{
+        font-family: 'Oxygen', Roboto, sans-serif;
+    }
+
+
+.gradient{
+   
+        background: linear-gradient(27deg, #4158D0, #C850C0, #FFCC70, #ffffff);
+        background-size: 800% 800%;
+        width: 100%;
+        height:580px;
+        position: absolute;
+        transform:skewY(30deg);
+    
+        -webkit-animation: AnimationName 60s ease infinite;
+        -moz-animation: AnimationName 60s ease infinite;
+        animation: AnimationName 60s ease infinite;
+    }
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:46% 0%}
+        50%{background-position:55% 100%}
+        100%{background-position:46% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:46% 0%}
+        50%{background-position:55% 100%}
+        100%{background-position:46% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:46% 0%}
+        50%{background-position:55% 100%}
+        100%{background-position:46% 0%}
+    }

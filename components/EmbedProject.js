@@ -23,7 +23,7 @@ export class EmbedProject extends React.Component {
                 return (
                     
                     <>
-                        <Col  m lg={4} className={styles.projects_item} onClick={handleShow} >
+                        <Col m lg={4} className={styles.projects_item} onClick={handleShow} >
                             <img className={styles.project_img}  src={"https://img.youtube.com/vi/" + youtube_parser(this.props.data.data)+ "/maxresdefault.jpg"}></img>
                             <div className={styles.overlay}>
                             <h3>{this.props.data.title}</h3>
@@ -32,13 +32,12 @@ export class EmbedProject extends React.Component {
                         </Col>
 
                         <Modal show={this.state.show} onHide={handleClose} centered size="md">
-                        <Modal.Header closeButton>
+                        <Modal.Header className={styles.modal_header} closeButton>
                             <Modal.Title>{this.props.data.title}</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <iframe width="100%" height="400px" src={"https://youtube.com/embed/" + youtube_parser(this.props.data.data)} frameborder="0" allowfullscreen></iframe>
-                            {this.props.data.subtitle}
-
+                            <iframe width="100%" height="300px" src={"https://youtube.com/embed/" + youtube_parser(this.props.data.data)} frameborder="0" allowfullscreen></iframe>
+                            <p className={styles.modal_subtitle}>{this.props.data.subtitle}</p>
 
                         </Modal.Body>
                         </Modal>

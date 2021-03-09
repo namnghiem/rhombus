@@ -1,11 +1,8 @@
-@font-face {
-  font-family: 'Noto Serif';
-  src: local('Noto Serif'), url(/fonts/NotoSerif/NotoSerif-BoldItalic.ttf) format('ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
 
 .body{
   overflow: hidden;
-background-color: #fafafa;
 }
 
 .nav{
@@ -83,7 +80,7 @@ background-color: #fafafa;
   object-fit: cover;
   width:100%;
   margin-bottom: 76px;
-  border-radius: 25px;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
@@ -114,8 +111,15 @@ background-color: #fafafa;
 
 }
 
+.brand{
+  font-family: 'Oxygen', Roboto, sans-serif;
+}
  .hero_title{
    margin-top: 76px;
+   font-family: 'Oxygen', Roboto, sans-serif;
+   text-decoration: underline;
+   font-weight: bold;
+
  }
  .hero_subtitle{
   margin-top: 40px;
@@ -151,4 +155,45 @@ background-color: #fafafa;
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+
+.gradient{
+   
+  background: linear-gradient(27deg, #08AEEA, #2AF598, #FFCC70, #ffffff);
+  background-size: 800% 800%;
+  width: 100%;
+  height:220px;
+  position: absolute;
+  transform:skewY(13deg);
+
+  -webkit-animation: AnimationName 60s ease infinite;
+  -moz-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:46% 0%}
+  50%{background-position:55% 100%}
+  100%{background-position:46% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:46% 0%}
+  50%{background-position:55% 100%}
+  100%{background-position:46% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:46% 0%}
+  50%{background-position:55% 100%}
+  100%{background-position:46% 0%}
+}
+
+.modal_header{
+  background-color: dimgray;
+  color: white;
+  font-size: larger;
+}
+
+.modal_subtitle{
+  margin-top: 16px;
 }

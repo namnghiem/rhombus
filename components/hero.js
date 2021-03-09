@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/Home.module.css'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook} from '@fortawesome/free-brands-svg-icons'
 import { faGlobe, faCaretSquareDown} from '@fortawesome/free-solid-svg-icons'
@@ -23,7 +24,7 @@ function Hero(props){
 
         <div  className={styles.nav}>
         <Navbar expand="lg" variant="light">
-          <Navbar.Brand href="#home">Nam Nghiem on <b>Portflight</b></Navbar.Brand>
+          <Navbar.Brand className={styles.brand}>Nam Nghiem on <b><u>Portflight</u></b></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse id="basic-navbar-nav">

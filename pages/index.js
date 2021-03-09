@@ -6,13 +6,13 @@ import { Navbar, NavDropdown, Form, FormControl, Nav, Row, Col, Badge, Button, C
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
     return(
-        <div className={styles.hero_gallery_parent}>
+        <div className={home.container}>
         {/* <div className={styles.hero_gallery}>
             <Gallery photos={photos}  targetRowHeight={350} margin={0}/>
         </div> */}
 
-          
-        <Container>
+        <div className={home.gradient}></div>
+        <Container >
           <Navbar expand="lg" variant="light" className={home.nav}>
             <Navbar.Brand href="#home" className={home.brand}><b><u>Portflight</u></b></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -38,11 +38,15 @@ export default function Home() {
               <h3 className={home.hero_subtitle}> You are more than your resume.</h3>
               <h5 className={home.hero_subtitle} >Whether you make movies, write code or design buildings, get discovered with a smart online portfolio.</h5>
             </Col>
-            <Col lg="6">
+            <Col lg="6" /* className={home.blurred_box} */>
               <img className={home.hero_picture} src="../undraw_innovative_b409.svg"></img>
             
             </Col>
-
+            <Col lg="6" className={home.body_section}>
+              <h1 className={home.hero_title}> Get seen. </h1>
+              <h3 className={home.hero_subtitle}> You are more than your resume.</h3>
+              <h5 className={home.hero_subtitle} >Whether you make movies, write code or design buildings, get discovered with a smart online portfolio.</h5>
+            </Col>
           </Row>
         
         </Container>

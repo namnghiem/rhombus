@@ -39,13 +39,39 @@ export default function Home() {
               <h5 className={home.hero_subtitle} >Whether you make movies, write code or design buildings, get discovered with a smart online portfolio.</h5>
             </Col>
             <Col lg="6" /* className={home.blurred_box} */>
-              <img className={home.hero_picture} src="../undraw_innovative_b409.svg"></img>
+             {/*  <img className={home.hero_picture} src="../undraw_innovative_b409.svg"></img>
             
+          */}
+              <div className={home.hero_demo}>
+                <Container fluid>
+                  <Row>
+                    <Col lg="12">
+                      <div className={home.demo_title}>
+                        <h3>Hi there! I'm Alex, and I'm a wildlife photographer.</h3>
+                      </div>      
+                    </Col>
+                    <Col lg="5">
+                          <img className={home.demo_image} src="https://source.unsplash.com/2ShvY8Lf6l0/800x599"></img>
+
+                    </Col>
+                    <Col lg="7">
+                          <img className={home.demo_image} src="https://source.unsplash.com/Dm-qxdynoEc/800x799"></img>
+
+                    </Col><Col lg="7">
+                          <img className={home.demo_image} src="https://source.unsplash.com/qDkso9nvCg0/600x799"></img>
+
+                    </Col>
+                    <Col lg="5">
+                          <img className={home.demo_image} src="https://source.unsplash.com/iecJiKe_RNg/800x799"></img>
+
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
             </Col>
             <Col lg="6" className={home.body_section}>
-              <h1 className={home.hero_title}> Get seen. </h1>
-              <h3 className={home.hero_subtitle}> You are more than your resume.</h3>
-              <h5 className={home.hero_subtitle} >Whether you make movies, write code or design buildings, get discovered with a smart online portfolio.</h5>
+              <h1 className={home.hero_title}> Get discovered. </h1>
+              <h3 className={home.hero_subtitle}> Fill your portfolio with rich images, videos and content.</h3>
             </Col>
           </Row>
         

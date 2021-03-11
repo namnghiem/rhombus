@@ -27,7 +27,6 @@ export class Projects extends React.Component {
             <Row>
                 {this.props.data.data.map((project)=>
                     <Project data = {project}></Project>
-                    
                 )}
                 
             </Row>  

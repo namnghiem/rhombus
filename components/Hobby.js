@@ -18,7 +18,7 @@ export class Hobby extends React.Component {
 
         return (
             <>
-                <Col  sm="auto" lg="auto"  onClick={handleShow}>
+                <Col  xs="auto" md="auto" lg="auto"  onClick={handleShow}>
                     <div className={styles.hobbies_item}>
                         <FontAwesomeIcon className={styles.hobby_icon} size="2x" icon={faAward}/>    
                         <span className={styles.hobby_title}>{this.props.data.title}</span>

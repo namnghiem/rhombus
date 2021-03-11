@@ -6,6 +6,7 @@ import {Hobbies} from './Hobbies.js';
 import {Experience} from './Experience.js';
 import {Empty} from './Empty.js';
 import {Gallery} from './Gallery.js';
+import {SingleVideo} from './SingleVideo.js';
 
 
 
@@ -15,7 +16,8 @@ const Components = {
   awards:Awards,
   experience:Experience,
   hobbies:Hobbies,
-  gallery:Gallery
+  gallery:Gallery,
+  video:SingleVideo
 };
 
 function Section(props) {

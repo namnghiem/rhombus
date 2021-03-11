@@ -60,6 +60,7 @@
         height:580px;
         position: absolute;
         transform:skewY(30deg);
+        z-index: -1000;
     
         -webkit-animation: AnimationName 60s ease infinite;
         -moz-animation: AnimationName 60s ease infinite;
@@ -89,6 +90,7 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );  
     padding: 32px;
+    margin-bottom: 12px;
 }
 
 .demo_title{
@@ -98,6 +100,7 @@
     padding:32px;
     overflow: hidden;
     margin-bottom: 20px;
+    font-family: Oxygen, Roboto, sans-serif;
 }
 .demo_image{
     width: 100%;
@@ -110,4 +113,26 @@
     height:100px;
     object-fit: cover;
     margin-top: 12px;
+}
+
+.tile_image{
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+}
+.tile_git{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.0px );
+    -webkit-backdrop-filter: blur( 15.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );  
+    padding: 32px;
+    margin-bottom: 24px;
+    height: 250px;
+}
+.tile_icon{
+    font-size: 2em;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }

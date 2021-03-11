@@ -1,3 +1,5 @@
+// todo: github contributions, text projects
+
 export const api = {
     "assets":{
     },
@@ -16,7 +18,7 @@ export const api = {
         {"title":"PocketON", "subtitle":"I directed a movie with one of the most gifted directors that I know of, and the picture was about the man making the choice about what kind of marriage to choose. The character was the real star, but the director was the real star. He shot the whole thing like I would see you at a wedding in the desert. So in that sense, when you have actors as talented as you are, especially when you're a veteran, it's easy to create the illusion of you. There was no choice", "type":"image", "data":"https://source.unsplash.com/XiDA78wAZVw/600x799"},
         {"title":"Societies", "subtitle":"I led a team of 40 engineers and scientists to investigate how the world uses and responds to electromagnetic energy. We discovered that this is an ancient, pervasive phenomenon that will not be solved overnight. It is the power of the sun, not the solar system that causes us, but the sun itself. With our help, the Earth's electromagnetic radiation shield begins to change into an energy shield that keeps the sun at bay and our Earth-based suns at bay. It's a fascinating science paper and is available on- © 2019-2020 Fabrice Bellard - Technical notes", "type":"image", "data":"https://source.unsplash.com/I1ASdgphUH4/800x599"}
       ]},
-      {"title":"Photography", subtitle:"Taking Pictures Around the World", "type": "gallery", "data": [
+      {"title":"Photography", "subtitle":"Taking Pictures Around the World", "type": "gallery", "data": [
         {"src":"https://source.unsplash.com/2ShvY8Lf6l0/800x599", "width":"4", "height":"3"},
         {"src":"https://source.unsplash.com/Dm-qxdynoEc/800x799", "width":"1", "height":"1"},
         {"src":"https://source.unsplash.com/qDkso9nvCg0/600x799", "width":"3", "height":"4"},
@@ -41,14 +43,14 @@ export const api = {
       {"title":"Hobbies", "type": "hobbies", "data": [
         {"title":"Football", "subtitle":"I love playing football, you know. It's the only sport that's not boring, and it's a big league sport. They're not going to stop watching me play when I'm doing well, and I'm not going to stop, for all intents and purposes, doing well in football. I also told him about some crazy tweets I received recently, in response to a picture he had posted of me playing in an NFL teams win:", "type":"image"},
         {"title":"Swimming", "subtitle":"Details", "type":"image"},
-        {"title":"Java", "subtitle":"Details", "type":"image"},
-        {"title":"text1", "subtitle":"Details", "type":"image"},
-        {"title":"text1", "subtitle":"Details", "type":"image"},
-        {"title":"text1", "subtitle":"Details", "type":"image"},
-        {"title":"text1", "subtitle":"Details", "type":"image"}
+        {"title":"Coding", "subtitle":"Details", "type":"image"},
+        {"title":"Piano", "subtitle":"Details", "type":"image"},
+        {"title":"Reading", "subtitle":"Details", "type":"image"},
+        {"title":"Music", "subtitle":"Details", "type":"image"},
+        {"title":"Travelling", "subtitle":"Details", "type":"image"}
       ] },
 
-      {"title":"Video", "type":"video"}
+      {"title":"The Hero Project", "subtitle":"I'm really proud of this","type":"video", "data":"https://www.youtube.com/watch?v=LACbVhgtx9I"}
     ]
     
   }
